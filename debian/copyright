@@ -1,22 +1,198 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: Leaflet.markercluster
+Upstream-Contact: https://github.com/fgnass/domino/issues
+Source: https://github.com/fgnass/domino
+ .
+ Repackaged, excluding embedded code copies
+Files-Excluded:
+ test/fixture/jquery-*.js
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+Copyright: 2011, The Mozilla Foundation
+License: BSD-2-clause
+Comment:
+ Copyright and license in file <LICENSE>
+ assumed to apply generally.
+
+Files: test/w3c/level1/*
+Copyright: 2001-2004, World Wide Web Consortium
+ (Massachusetts Institute of Technology,
+ European Research Consortium for Informatics and Mathematics,
+ Keio University)
+License-Grant:
+ This work is distributed under the W3C® Software License
+ <http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231>
+ in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY;
+ without even the implied warranty of MERCHANTABILITY
+ or FITNESS FOR A PARTICULAR PURPOSE.
+License: W3C
+
+Files: lib/cssparser.js
+Copyright: 2009-2011, Nicholas C. Zakas
+License: Expat
+Comment:
+ Fork of <https://github.com/CSSLint/parser-lib>
+ maintained at <https://github.com/cscott/parser-lib>.
+
+Files: lib/select.js
+Copyright: 2011-2012, Christopher Jeffrey
+License-Grant:
+ MIT Licensed
+License: Expat
+Comment:
+ Fork of <https://github.com/chjj/zest>
+ maintained at <https://github.com/cscott/zest>.
+
+Files: lib/DOMException.js
+Copyright: 2001-2004, World Wide Web Consortium
+ (Massachusetts Institute of Technology,
+ European Research Consortium for Informatics and Mathematics,
+ Keio University)
+License: W3C
+Comment:
+ License assumed to to be W3C,
+ i.e. the _Software_ license with SPDX label "W3C".
  .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ In particular, the following embedded notice
+ is considered _not_ a license grant
+ as it explicitly applies only to strings
+ assumed not protected by copyright:
  .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
+ These strings are from the 13 May 2011 Editor's Draft of DOM Core.
+ <http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html>
+ Copyright © 2011 W3C® (MIT, ERCIM, Keio), All Rights Reserved.
+ Used under the terms of the W3C Document License:
+ <http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231>
+
+Files: test/w3c/harness/DomTestCase.js
+Copyright: 2001-2005, World Wide Web Consortium
+ (Massachusetts Institute of Technology,
+ European Research Consortium for Informatics and Mathematics,
+ Keio University)
+License-Grant:
+ This program is distributed
+ under the W3C's Software Intellectual Property License.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY;
+ without even the implied warranty of MERCHANTABILITY
+ or FITNESS FOR A PARTICULAR PURPOSE.
+ See W3C License <http://www.w3.org/Consortium/Legal/> for more details.
+License: W3C
+
+Files: debian/*
+Copyright: 2016-2020, Jonas Smedegaard <dr@jones.dk>
+License-Grant:
+ This program is free software;
+ you can redistribute it and/or modify it
+ under the terms of the GNU General Public License
+ as published by the Free Software Foundation;
+ either version 3, or (at your option) any later version.
+License: GPL-3+
+
+License: BSD-2-clause
+ Redistribution and use in source and binary forms,
+ with or without modification,
+ are permitted provided that the following conditions are met:
  .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+  1. Redistributions of source code must retain
+     the above copyright notice, this list of conditions
+     and the following disclaimer.
+ .
+  2. Redistributions in binary form must reproduce
+     the above copyright notice, this list of conditions
+     and the following disclaimer in the documentation
+     and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED
+ BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ INCLUDING, BUT NOT LIMITED TO,
+ THE IMPLIED WARRANTIES OF MERCHANTABILITY
+ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+ OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS;
+ OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: Expat
+ Permission is hereby granted, free of charge,
+ to any person obtaining a copy of this software
+ and associated documentation files (the "Software"),
+ to deal in the Software without restriction,
+ including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software,
+ and to permit persons to whom the Software is furnished to do so,
+ subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included
+ in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS",
+ WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO
+ THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+ FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+License: GPL-3+
+License-Reference: /usr/share/common-licenses/GPL-3
+
+License: W3C
+ By obtaining, using and/or copying this work,
+ you (the licensee) agree that you have read, understood,
+ and will comply with the following terms and conditions.
+ .
+ Permission to copy, modify, and distribute
+ this software and its documentation,
+ with or without modification,
+ for any purpose and without fee or royalty
+ is hereby granted,
+ provided that you include the following
+ on ALL copies of the software and documentation or portions thereof,
+ including modifications:
+ .
+   * The full text of this NOTICE in a location
+     viewable to users of the redistributed or derivative work.
+   * Any pre-existing intellectual property disclaimers, notices,
+     or terms and conditions.
+     If none exist, the W3C Software Short Notice should be included
+     (hypertext is preferred, text is permitted)
+     within the body of any redistributed or derivative code.
+   * Notice of any changes or modifications to the files,
+     including the date changes were made.
+     (We recommend you provide URIs to the location
+     from which the code is derived.)
+ .
+ Disclaimers
+ .
+ THIS SOFTWARE AND DOCUMENTATION IS PROVIDED "AS IS,"
+ AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES,
+ EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO,
+ WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE
+ OR THAT THE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE
+ ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.
+ .
+ COPYRIGHT HOLDERS WILL NOT BE LIABLE
+ FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES
+ ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.
+ .
+ The name and trademarks of copyright holders may NOT be used
+ in advertising or publicity pertaining to the software
+ without specific, written prior permission.
+ Title to copyright in this software and any associated documentation
+ will at all times remain with copyright holders.

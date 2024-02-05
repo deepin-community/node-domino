@@ -1,0 +1,38 @@
+Description: Avoid privacy breach in documentation
+Author: Jonas Smedegaard <dr@jones.dk>
+Last-Update: 2019-01-21
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/README.md
++++ b/README.md
+@@ -1,7 +1,5 @@
+ # Server-side DOM implementation based on Mozilla's dom.js
+ 
+-[![Build Status][1]][2] [![dependency status][3]][4] [![dev dependency status][5]][6]
+-
+ As the name might suggest, domino's goal is to provide a <b>DOM in No</b>de.
+ 
+ In contrast to the original [dom.js](https://github.com/andreasgal/dom.js) project, domino was not designed to run untrusted code. Hence it doesn't have to hide its internals behind a proxy facade which makes the code not only simpler, but also [more performant](https://github.com/fgnass/dombench).
+@@ -109,9 +107,8 @@
+ Domino includes test from the [W3C DOM Conformance Suites](http://www.w3.org/DOM/Test/)
+ as well as tests from [HTML Working Group](http://www.w3.org/html/wg/wiki/Testing).
+ 
+-The tests can be run via `npm test` or directly though the [Mocha](http://mochajs.org/) command line:
+-
+-![Screenshot](http://fgnass.github.com/images/domino.png)
++The tests can be run via `npm test` or directly though the [Mocha](http://mochajs.org/) command line -
++see screenshot at <http://fgnass.github.com/images/domino.png>.
+ 
+ ## License and Credits
+ 
+@@ -124,10 +121,3 @@
+ [Parsoid](https://www.mediawiki.org/wiki/Parsoid) project.  A large number
+ of improvements have been made, mostly focusing on correctness,
+ performance, and (to a lesser extent) completeness of the implementation.
+-
+-[1]: https://travis-ci.org/fgnass/domino.svg
+-[2]: https://travis-ci.org/fgnass/domino
+-[3]: https://david-dm.org/fgnass/domino.svg
+-[4]: https://david-dm.org/fgnass/domino
+-[5]: https://david-dm.org/fgnass/domino/dev-status.svg
+-[6]: https://david-dm.org/fgnass/domino#info=devDependencies

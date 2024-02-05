@@ -1,0 +1,29 @@
+Description: limit tests for system-wide available jquery
+Author: Jonas Smedegaard <dr@jones.dk>
+Forwarded: not-needed
+Last-Update: 2019-01-21
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/test/domino.js
++++ b/test/domino.js
+@@ -251,6 +251,7 @@
+   (div.attributes.onclick === undefined).should.be.true();
+ };
+ 
++/*
+ exports.jquery1_9 = function() {
+   var window = domino.createWindow(html);
+   var f = __dirname + '/fixture/jquery-1.9.1.js';
+@@ -269,10 +270,11 @@
+   });
+   window.$.ajax({ url: 'test://', dataType: "test", timeout: 1, async: true });
+ };
++*/
+ 
+ exports.jquery3 = function() {
+   var window = domino.createWindow(html);
+-  window.$ = require(__dirname + '/../node_modules/jquery/dist/jquery.js')(window);
++  window.$ = require('/usr/share/javascript/jquery/jquery.js')(window);
+   window.$.should.be.ok();
+   window.$('.foo').should.have.length(3);
+   window.$.ajaxTransport("test", function() {
