@@ -1,0 +1,14 @@
+Test-Command: node --disable-proto=throw -e "require('domino');"
+Depends:
+ @,
+ nodejs,
+Restrictions: superficial
+
+Test-Command:
+ cd /usr/share/nodejs &&
+ eslint --no-eslintrc --format tap --env node domino
+Depends:
+ eslint,
+ node-domino,
+ node-js-yaml,
+Restrictions: superficial, skip-not-installable

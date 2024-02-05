@@ -1,0 +1,16 @@
+Description: drop __proto__ calls
+Author: Yadd <yadd@debian.org>
+Forwarded: no
+Last-Update: 2022-10-28
+
+--- a/lib/DOMException.js
++++ b/lib/DOMException.js
+@@ -124,7 +124,7 @@
+   this.message = messages[code];
+   this.name = names[code];
+ }
+-DOMException.prototype.__proto__ = Error.prototype;
++Object.setPrototypeOf(DOMException.prototype, Error.prototype);
+ 
+ // Initialize the constants on DOMException and DOMException.prototype
+ for(var c in constants) {

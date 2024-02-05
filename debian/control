@@ -1,15 +1,35 @@
-Source: template-repository
-Section: unknown
+Source: node-domino
+Section: javascript
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders:
+ Jonas Smedegaard <dr@jones.dk>,
+Build-Depends:
+ debhelper-compat (= 13),
+ libjs-jquery <!nocheck>,
+ mocha <!nocheck>,
+ node-js-yaml <!nocheck>,
+ node-should <!nocheck>,
+ node-strip-json-comments <!nocheck>,
+ pandoc <!nodoc>,
+Standards-Version: 4.6.1
+Homepage: https://github.com/fgnass/domino
+Vcs-Browser: https://salsa.debian.org/js-team/node-domino
+Vcs-Git: https://salsa.debian.org/js-team/node-domino.git
+Rules-Requires-Root: no
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: node-domino
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+Description: server-side DOM implementation based on Mozilla's dom.js
+ Domino provides a fast but insecure DOM in Node.js.
+ .
+ The Document Object Model (DOM)
+ is a cross-platform and language-independent
+ application programming interface
+ that treats an HTML, XHTML, or XML document as a tree structure
+ wherein each node is an object representing a part of the document.
+ .
+ Node.js is an event-based server-side JavaScript engine.

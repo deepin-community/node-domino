@@ -1,5 +1,111 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-domino (2.1.6~ds-5) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * Update standards version to 4.6.1, no changes needed.
+  * Replace __proto__ call by Object.setPrototypeOf()
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Yadd <yadd@debian.org>  Fri, 28 Oct 2022 12:33:11 +0200
+
+node-domino (2.1.6~ds-4) unstable; urgency=medium
+
+  * fix eslint test
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 01 Feb 2022 23:58:54 +0100
+
+node-domino (2.1.6~ds-3) unstable; urgency=medium
+
+  * Team upload
+  * Add test dependency to node-js-yaml (Closes: #1001855)
+
+ -- Yadd <yadd@debian.org>  Fri, 17 Dec 2021 21:41:52 +0100
+
+node-domino (2.1.6~ds-2) unstable; urgency=medium
+
+  * team upload
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+  * Update standards version to 4.6.0, no changes needed.
+  * Drop nodejs dependency
+  * Fix autopkgtest
+
+ -- Yadd <yadd@debian.org>  Thu, 09 Dec 2021 09:21:21 +0100
+
+node-domino (2.1.6~ds-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * simplify source script copyright-check
+  * use debhelper compatibility level 13 (not 12)
+  * unfuzz patch 2001
+  * build-depend on node-strip-json-comments,
+    as workaround for bug#968182
+  * support DEB_BUILD_OPTIONS=terse during testsuite
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 10 Aug 2020 12:38:09 +0200
+
+node-domino (2.1.5~ds-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * add patch 1001 to annotate source for ESLint
+  * add superficial skip-not-installable eslint autopkgtest
+  * annotate superficial autopkgtest
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 14 Jun 2020 08:45:11 +0200
+
+node-domino (2.1.4~ds-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Debian Janitor ]
+  * use debhelper compatibility level 12 (not 9)
+    build-depend on debhelper-compat (not debhelper)
+  * set upstream metadata fields: Repository, Repository-Browse
+
+  [ Jonas Smedegaard ]
+  * watch:
+    + use dversionmangle=auto
+    + use repacksuffix=~ds (not ~dfsg: no violation only nuisance)
+  * simplify rules:
+    stop use perl prove as TAP harness; stop build-depend on perl
+  * declare compliance with Debian Policy 4.5.0
+  * unfuzz patch 2001
+  * copyright: update coverage
+  * install below /usr/share (not /usr/lib)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 23 Apr 2020 17:06:45 +0200
+
+node-domino (2.1.3~dfsg-1) unstable; urgency=medium
+
+  [ upstream ]
+  * New release.
+
+  [ Jonas Smedegaard ]
+  * Declare compliance with Debian Policy 4.4.0.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 14 Jul 2019 22:22:50 -0300
+
+node-domino (2.1.2~dfsg-1) unstable; urgency=medium
+
+  [ upstream ]
+  * New release.
+
+  [ Jonas Smedegaard ]
+  * Update watch file:
+    + Generalize version mangling for repackaging.
+    + Simplify regular expressions.
+    + Rewrite usage comment.
+  * Update copyright info: Drop superfluous alternate Source URL.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 25 Feb 2019 17:51:41 +0100
+
+node-domino (2.1.1~dfsg-1) unstable; urgency=low
+
+  * Initial release.
+  * Closes: bug#919997.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 21 Jan 2019 13:38:54 +0100

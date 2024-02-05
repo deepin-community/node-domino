@@ -1,0 +1,5 @@
+  * Enable platform tests
+    when <https://github.com/web-platform-tests/wpt> is in Debian.
+
+  * Enable all jquery tests
+    when jquery 1.x and 2.x is (formally) is in Debian.
